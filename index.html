@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/Main Logo.png"
+      type="image/x-icon"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="backgroundPage">
+      <div id="circleGreen"></div>
+      <div id="circleRed"></div>
+      <div id="circlePurple"></div>
+      <div class="glass"></div>
+    </div>
+    <form action="" class="inputContainer" autocomplete="off">
+      <div class="loginContainer">
+        <div class="logoContainer">
+          <img src="./assets/images/Main Logo.png" alt="" />
+          <p>TECH LIFE PERSIA</p>
+          <p>Team for Web designing and Web Developing</p>
+        </div>
+        <div class="inputBox">
+          <h2>Login Page</h2>
+          <label for="">User Name (Email) : </label>
+          <input type="text" id="un" />
+          <label for="pwd">Password :</label>
+          <input type="password" id="pwd" name="pwd" disabled="true" />
+          <p>if you forget password <a href="#">click here!</a></p>
+          <div class="captcha">
+            <label for="">Capcha : </label>
+            <div class="captchContainer">
+              <input type="text" id="mainCaptcha" readonly="readonly" />
+              <input
+              type="button"
+              id="refresh"
+              value="create again"
+              onclick="generateCaptcha();"
+              />
+              <input type="text" id="txtInputCaptcha" disabled />
+              <input type="button" id="checkValidation" value="check !" />
+            </div>
+            <span id="timer"></span>
+          </div>
+          <div class="buttonLoginContainer">
+            <input type="submit" class="btnLogin" value="Sign in" />
+          </div>
+        </div>
+        <div class="socialMedia">
+        <div id="line"></div>
+          <p>try for login with social media</p>
+        <div id="line"></div>
+          <a href="" class="btnSocialMedia" id="facebook">
+            <img src="./assets/images/socialMedia/facebook.png" alt="">
+            <p>facebook</p>
+          </a>
+          <a href="" class="btnSocialMedia" id="google">
+            <img src="./assets/images/socialMedia/gmail.png" alt="">
+            <p>Gmail</p>
+          </a>
+          <a href="" class="btnSocialMedia" id="X">
+            <img src="./assets/images/socialMedia/x.jpeg" alt="">
+            <p>X</p>
+          </a>
+          <a href="" class="btnSocialMedia" id="apple">
+            <img src="./assets/images/socialMedia/apple.png" alt="">
+            <p>Apple ID</p>
+          </a>
+        </div>
+        <div class="conectUs-signup">
+          <a href="#" id="conectUs">Conect Us</a>
+          <a href="#" id="signUp">Sign up</a>
+          <div class="copyright">
+            <p>Copytight with <a href="https://www.linkedin.com/in/tech-life-persia-ahmad-farajpour-193979224">Tech Life Persia</a></p>
+          </div>
+        </div>
+
+      </div>
+    </form>
+  </body>
+  <script src="/assets/javascript/JavaScript.js"></script>
+</html>
